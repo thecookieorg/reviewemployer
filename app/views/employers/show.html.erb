@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @employer.image_url %>
+
 <p>
   <strong>Name:</strong>
   <%= @employer.name %>
@@ -20,5 +22,5 @@
   <%= @employer.website %>
 </p>
 
-<%= link_to 'Edit', edit_employer_path(@employer) %> |
-<%= link_to 'Back', employers_path %>
+<%= link_to 'Edit', edit_employer_path(@employer), class: "btn btn-link" %> |
+<%= link_to 'Back', employers_path, class: "btn btn-link" %>
